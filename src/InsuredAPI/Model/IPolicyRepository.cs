@@ -7,6 +7,7 @@ namespace InsuredAPI.Model
 {
     public interface IPolicyRepository
     {
-        List<Policy> GetPolicies();
+        List<Policy> GetPolicies(string email);
+        List<Model.Attachment> GetPolicyAttachment(string id);
     }
 }

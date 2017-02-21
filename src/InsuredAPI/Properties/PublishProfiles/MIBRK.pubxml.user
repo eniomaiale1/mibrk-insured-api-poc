@@ -11,19 +11,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="appsettings.json">
-      <publishTime>01/08/2017 12:38:57</publishTime>
+      <publishTime>01/31/2017 19:19:19</publishTime>
     </File>
     <File Include="InsuredAPI.deps.json">
-      <publishTime>01/08/2017 15:02:08</publishTime>
+      <publishTime>01/31/2017 20:18:51</publishTime>
     </File>
     <File Include="InsuredAPI.dll">
-      <publishTime>01/08/2017 15:02:05</publishTime>
+      <publishTime>01/31/2017 20:18:46</publishTime>
     </File>
     <File Include="InsuredAPI.pdb">
-      <publishTime>01/08/2017 15:02:05</publishTime>
+      <publishTime>01/31/2017 20:18:46</publishTime>
     </File>
     <File Include="InsuredAPI.runtimeconfig.json">
-      <publishTime>01/08/2017 15:02:08</publishTime>
+      <publishTime>01/31/2017 20:18:51</publishTime>
     </File>
     <File Include="Microsoft.ApplicationInsights.AspNetCore.dll">
       <publishTime>06/22/2016 12:35:54</publishTime>
@@ -119,6 +119,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/31/2016 17:26:18</publishTime>
     </File>
     <File Include="Microsoft.AspNetCore.Mvc.ViewFeatures.dll">
+      <publishTime>08/31/2016 17:26:18</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.WebApiCompatShim.dll">
       <publishTime>08/31/2016 17:26:18</publishTime>
     </File>
     <File Include="Microsoft.AspNetCore.Razor.dll">
@@ -424,6 +427,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="refs/System.Runtime.Serialization.Primitives.dll">
       <publishTime>06/11/2016 23:14:32</publishTime>
     </File>
+    <File Include="refs/System.Runtime.Serialization.Xml.dll">
+      <publishTime>06/11/2016 23:14:32</publishTime>
+    </File>
     <File Include="refs/System.Security.Claims.dll">
       <publishTime>06/11/2016 23:14:40</publishTime>
     </File>
@@ -481,6 +487,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="refs/System.Xml.XDocument.dll">
       <publishTime>06/11/2016 23:15:02</publishTime>
     </File>
+    <File Include="refs/System.Xml.XmlSerializer.dll">
+      <publishTime>06/11/2016 23:15:04</publishTime>
+    </File>
     <File Include="System.Collections.NonGeneric.dll">
       <publishTime>06/11/2016 23:13:22</publishTime>
     </File>
@@ -496,17 +505,35 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="System.Diagnostics.Contracts.dll">
       <publishTime>06/11/2016 23:13:28</publishTime>
     </File>
+    <File Include="System.Net.Http.Extensions.dll">
+      <publishTime>04/29/2014 14:51:10</publishTime>
+    </File>
+    <File Include="System.Net.Http.Formatting.dll">
+      <publishTime>08/26/2014 04:33:50</publishTime>
+    </File>
+    <File Include="System.Net.Http.Primitives.dll">
+      <publishTime>04/29/2014 14:51:10</publishTime>
+    </File>
     <File Include="System.Net.WebSockets.dll">
       <publishTime>06/11/2016 23:14:08</publishTime>
+    </File>
+    <File Include="System.Private.DataContractSerialization.dll">
+      <publishTime>06/11/2016 23:14:10</publishTime>
     </File>
     <File Include="System.Runtime.Serialization.Primitives.dll">
       <publishTime>06/11/2016 23:14:32</publishTime>
     </File>
+    <File Include="System.Runtime.Serialization.Xml.dll">
+      <publishTime>06/11/2016 23:14:30</publishTime>
+    </File>
     <File Include="System.Text.Encodings.Web.dll">
       <publishTime>06/11/2016 23:14:48</publishTime>
     </File>
+    <File Include="System.Xml.XmlSerializer.dll">
+      <publishTime>06/11/2016 23:15:04</publishTime>
+    </File>
     <File Include="web.config">
-      <publishTime>01/08/2017 15:02:10</publishTime>
+      <publishTime>01/31/2017 20:18:52</publishTime>
     </File>
   </ItemGroup>
 </Project>

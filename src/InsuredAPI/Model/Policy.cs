@@ -11,7 +11,7 @@ namespace InsuredAPI.Model
         public string type { get; set; }
         public DateTime effective { get; set; }
         public DateTime expiration { get; set; }
-        public string insured { get; set; }
+        public string insurer { get; set; }
         public string policy_number { get; set; }
         public string agent { get; set; }
         public string premium { get; set; }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using InsuredAPI.Data;
 
 namespace InsuredAPI.Model
 {
@@ -11,12 +12,31 @@ namespace InsuredAPI.Model
             
         }
 
-        public List<Policy> GetPolicies() {
-            List<Policy> policies = new List<Policy>();
-            policies.Add(new Policy { id = Guid.NewGuid().ToString(), policy_number = "policyNumber", effective = DateTime.Now, expiration = DateTime.Now.AddYears(1), agent = "Enio Maiale", type="Personal Auto", insured="Progresive" , image="auto.png", premium="1500" });
-            policies.Add(new Policy { id = Guid.NewGuid().ToString(), policy_number = "policyNumber", effective = DateTime.Now, expiration = DateTime.Now.AddYears(1), agent = "Enio Maiale", type = "Personal Auto", insured = "Progresive", image = "auto.png", premium = "1500" });
-            policies.Add(new Policy { id = Guid.NewGuid().ToString(), policy_number = "policyNumber", effective = DateTime.Now, expiration = DateTime.Now.AddYears(1), agent = "Enio Maiale", type = "Personal Auto", insured = "Progresive", image = "auto.png", premium = "1500" });
-            return policies;
+        public List<Policy> GetPolicies(string email) {
+            if (string.IsNullOrEmpty(email))
+            { 
+                throw new ArgumentException("The email cannot be empty or null");
+            }
+
+            if (!new InsuredAPI.Utility.Helper().isValidEmail(email))
+            {
+                throw new ArgumentException("The email is not a valid email");
+            }
+            ZohoCRM zoho = new ZohoCRM();
+            List<Policy> data = zoho.GetPolicies(email);
+            return data;
+        }
+
+        public List<Model.Attachment> GetPolicyAttachment(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                throw new ArgumentException("The id cannot be empty or null");
+            }
+
+            ZohoCRM zoho = new ZohoCRM();
+            List<Model.Attachment> data = zoho.GetPolicyAttachments(id);
+            return data;
         }
     }
 }
